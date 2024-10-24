@@ -17,6 +17,8 @@
                   placeholder="Fornavn"
                   required
                   value="Fornavn"
+                  minlength="2"
+                  maxlength="20"
                />
             </div>
 
@@ -27,6 +29,9 @@
                   id="l-name"
                   required
                   placeholder="Etternavn"
+                  minlength="2"
+                  maxlength="30"
+                  readonly
                />
             </div>
 
@@ -82,7 +87,37 @@
          </section>
          <section>
             <label for="booking">When do you want to book</label>
-            <input type="date" id="booking" min="2024-10-24" />
+            <input type="date" id="booking" min="2024-10-24" max="2030-01-01" />
+            <label for="password">Passord</label>
+            <input type="password" id="password" pattern="" />
+            <div>
+               <label for="phone-number">Telefonnummer</label>
+               <input
+                  type="tel"
+                  id="phone-number"
+                  pattern="[0-9]{8}"
+                  placeholder="45205250"
+               />
+            </div>
+            <div>
+               <select id="favorite-thing">
+                  <option disabled selected value="--select an option--">
+                     --select an option--
+                  </option>
+                  <option value="Hest">Hest</option>
+                  <option value="Tog">Tog</option>
+                  <option value="Klovner">Klovner</option>
+                  <option value="Hund">Hund</option>
+               </select>
+
+               <input list="browsers" />
+               <datalist id="browsers">
+                  <option value="Chrome">Chrome</option>
+                  <option value="Firefox">Firefox</option>
+                  <option value="Opera">Opera</option>
+                  <option value="Edge">Edge</option>
+               </datalist>
+            </div>
          </section>
       </form>
    </body>
