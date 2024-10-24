@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+form {
+    display: flex;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.checkbox,
+.radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input {
+    border-radius: 50px;
+    border: solid 1px black;
+}
+
+
+input:hover,
+input:focus {
+    border: solid 1px darkgreen;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: aliceblue;
+}
